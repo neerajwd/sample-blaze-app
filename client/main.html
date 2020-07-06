@@ -1,0 +1,56 @@
+<head>
+  <title>simple-todos</title>
+</head>
+
+<body>
+  {{> navbar}}
+  <main class="main-section">
+    {{> inputbox}}
+    {{> tasks}}
+  </main>
+  {{!-- {{> markdownsample title="hello"}}
+  {{> markdownsample title="hai"}}
+  {{> markdownsample title="down"}} --}}
+</body>
+
+<template name="tasks">
+  <ol class="tasks-list">
+    {{#each list}}
+    {{> tasklist}}
+    {{/each}}
+  </ol>
+</template>
+
+<template name="tasklist">
+  <li>
+    <label for={{_id}}>{{name}}
+      <input type="checkbox" checked={{checked}} id={{_id}} class="custom-checkbox">
+    </label>
+  </li>
+</template>
+
+
+<template name="inputbox">
+  <form action="">
+    <input type="text" placeholder="Add new task" class="task-input" value={{taskText}}>
+    <input type="submit" value="Add" class="submit">
+  </form>
+</template>
+
+<template name="markdownsample">
+  <h2>{{title}}</h2>
+</template>
+
+
+<template name="navbar">
+  <div class="king-navbar">
+    <div class="logo">
+      Logo
+    </div>
+    <ul class="navbar-links">
+      <li>Home</li>
+      <li>About</li>
+      <li>Help</li>
+    </ul>
+  </div>
+</template>

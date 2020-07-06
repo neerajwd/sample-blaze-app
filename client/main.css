@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-section{
+  padding: 20px;
+}
+.king-navbar{
+  padding: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  background-color: gray;
+}
+.navbar-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.tasks-list{
+  margin-top: 14px;
+}
+.tasks-list li{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+label{
+  cursor: pointer;
+}
