@@ -1,8 +1,8 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-import { Tasks } from '../imports/api/tasks';
+import { Tasks } from '../../imports/api/tasks';
 
-import './main.html';
+import './todo.html';
 
 
 Template.tasks.helpers({

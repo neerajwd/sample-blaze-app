@@ -1,0 +1,17 @@
+<head>
+    <title>Hello</title>
+</head>
+
+<template name="userprofile">
+    {{> profiledetails}}
+</template>
+
+
+<template name="profiledetails">
+    <div class="profile">
+        <h4>User Profile</h4>
+        <section> Name: {{name}}</section>
+        <section> Department: {{department}}</section>
+        <section> Email: {{email}} </section>
+    </div>
+</template>
