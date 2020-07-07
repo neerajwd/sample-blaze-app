@@ -1,0 +1,31 @@
+<head>
+    <title>User Accounts</title>
+</head>
+
+
+
+<template name="account">
+    User Account
+    {{> createuser}}
+    {{> userlist}}
+</template>
+
+
+<template name="createuser">
+    <form action="">
+        <input type="text" placeholder="name" name="name" class="custom-input">
+        <input type="text" placeholder="email" name="email" class="custom-input">
+        <input type="text" placeholder="department" name="department" class="custom-input">
+        <input type="submit" value="Submit" class="custom-submit">
+    </form>
+</template>
+
+
+<template name="userlist">
+    <h6>Current users list</h6>
+    <ul>
+        {{#each users}}
+        <li><a href={{pathFor route='user.show'}}>{{name}}</a></li>
+        {{/each}}
+    </ul>
+</template>

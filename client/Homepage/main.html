@@ -1,0 +1,22 @@
+<head>
+  <title>simple-todos</title>
+</head>
+
+
+<template name="defaultlayout">
+  <div class="king-navbar">
+    <div class="logo">
+      Logo
+    </div>
+    <ul class="navbar-links">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/account">Accounts</a>
+      </li>
+    </ul>
+  </div>
+
+  {{> yield}}
+</template>
